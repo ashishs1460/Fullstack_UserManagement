@@ -1,0 +1,18 @@
+/* styles.css (or your component's style file) */
+/* styles.css (or your component's style file) */
+.mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-content,
+  .right-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-buttons {
+    order: 1; /* Change the order to move it to the right */
+  }
+  

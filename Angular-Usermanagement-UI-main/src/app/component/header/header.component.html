@@ -1,0 +1,12 @@
+<mat-toolbar color="primary" class="mat-elevation-z8">
+    <div class="left-content">
+      <span>UserManagement System</span>
+    </div>
+    <div class="right-buttons">
+      <button (click)="onLogout($event)" *ngIf="isAuthenticate | async" mat-button>Logout</button>
+      <button *ngIf="!(isAuthenticate | async)" mat-button routerLink="signup">Signup</button>
+      <button *ngIf="!(isAuthenticate | async)" mat-button routerLink="">Login</button>
+      <button mat-button routerLink='home'>Home</button>
+    </div>
+  </mat-toolbar>
+  
